@@ -39,7 +39,7 @@ ul{
   padding: 0px;
 }
 
-/* Активное состояние ссылок и кнопок*/
+/* oбщие эффекты для активного состояние ссылок и кнопок*/
 .link:hover,
 .link:focus,
 .address:hover,
@@ -58,15 +58,6 @@ ul{
   border-style: none;
   border-radius: 4px;
 }
-.btn:hover,
-.btn:focus{
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-.order:hover,
-.order:focus{
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
 /* Header */
 .page-header{
   border-bottom: 1px solid #ECECEC;
@@ -140,7 +131,8 @@ ul{
 
   align-items: center;
 }
-.contact:hover{
+.contact:hover,
+.contact:focus{
 color: var(--accent-color);
 }
 .contact:hover .envelope,
@@ -172,16 +164,16 @@ color: var(--accent-color);
 .container-hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  
-  
-  min-width: 1600px;
+}
+.hero{
+  max-width: 1600px;
   background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
    url("../image/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin: 0 auto;
 }
-
 .hero,
 .our-team {
   text-align: center;
@@ -199,12 +191,17 @@ color: var(--accent-color);
 
   border-style: none;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ 
 
   min-width: 200px;
   padding: 10px 30px;
   display: inline-block;
 }
+.order:hover,
+.order:focus{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 .title {
   color: var(--main-color);
 
@@ -324,7 +321,8 @@ color: var(--accent-color);
   width:20px;
   height:20px;
 }
-.icon-link:hover{
+.icon-link:hover,
+.icon-link:focus{
   background-color: var(--accent-color);
   fill:var(--main-color)
 }
@@ -435,7 +433,8 @@ color: var(--main-color);
   width:20px;
   height:20px;
 }
-.join-link:hover{
+.join-link:hover,
+.join-link:focus{
   background-color: var(--accent-color);
 }
 
@@ -459,6 +458,11 @@ color: var(--main-color);
   display: inline-block;
   padding: 6px 22px;
 }
+.btn:hover,
+.btn:focus{
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .work-title {
   font-size: 18px;
   line-height: 2;
