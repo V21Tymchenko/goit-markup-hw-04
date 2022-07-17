@@ -428,7 +428,7 @@ ul {
 
 .join-list {
   display: flex;
-  width: 206px;
+  min-width: 206px;
   justify-content: space-between;
 }
 .join-link {
