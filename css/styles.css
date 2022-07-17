@@ -49,9 +49,7 @@ ul {
   color: var(--accent-color);
 }
 .btn:hover,
-.btn:focus,
-.order:hover,
-.order:focus {
+.btn:focus {
   color: var(--main-color);
   background-color: var(--accent-color);
 
@@ -199,8 +197,8 @@ ul {
 }
 
 .order {
-  color: var(--main-text-color);
-  background-color: var(--button-color);
+  color: var(--main-color);
+  background-color: var(--accent-color);
 
   cursor: pointer;
   font-weight: 700;
@@ -256,12 +254,20 @@ ul {
   min-width: 270px;
 }
 .icon-container {
+  display: flex;
+
   width: 270px;
   height: 120px;
   background-color: var(--button-color);
-
-  padding: 25px 100px;
   margin-bottom: 30px;
+  border-radius: 4px;
+
+  align-items: center;
+  justify-content: center;
+}
+.benefits-icon{
+  width:70px;
+  height:70px;
 }
 
 /* Чем мы занимаемся */
@@ -304,6 +310,7 @@ ul {
 .benefits-title {
   margin-bottom: 10px;
 }
+
 .team-list {
   background: var(--main-color);
 
