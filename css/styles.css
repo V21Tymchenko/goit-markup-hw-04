@@ -351,10 +351,7 @@ ul {
   fill: var(--main-color);
 }
 /* Постоянные клиенты */
-.clients-container {
-  padding-top: 51px;
-  padding-bottom: 94px;
-}
+
 .clients-title {
   font-weight: 700;
   font-size: 36px;
